@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Air Quality</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+</head>
+<body>
+  <header>
+    <nav class="container nav-bar">
+      <h1> Air Quality Project</h1>
+      <ul class="nav-links">
+        <li><a href="#sobre-o-projeto">information</a></li>
+        <li><a href="#resultados">Results</a></li>
+        <li><a href="#previsao">Forecast</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>AI-Powered Air Quality Analysis and Prediction</h2>
+        <p>Understanding and predicting pollution levels for a healthier future.</p>
+      </div>
+    </section>
+
+<section id="sobre-o-projeto" class="sobre-container">
+<div class="imagem-box">
+  <img src="\img\img.jpeg" alt="Tabela de qualidade do ar">
+  <img src="\img\Quality air.jpeg" alt="Segunda imagem sobre qualidade do ar">
+</div>
+
+  <div class="cards-box">
+    <div class="card">
+      <h3><strong>Welcome!</strong></h3>
+      <p>
+      This project delves into the analysis and prediction of air quality using the power of data and Artificial Intelligence (AI). Our main goal is to unravel the complex factors that contribute to air pollution, from industrial and vehicle emissions to meteorological and geographic conditions.
+
+By collecting and processing comprehensive data on pollutants, traffic, weather patterns, and other relevant variables, we develop advanced AI models. These models are able to identify hidden trends, correlations, and patterns, allowing us to more accurately understand pollution behavior in different scenarios.
+
+More than just understanding the past, our project aims to provide a robust and accessible forecasting tool. This tool will allow us to anticipate pollution spikes, identify risk areas, and provide valuable information to decision-makers and the general public. With clear, data-driven projections, we hope to empower individuals and communities to take proactive preventive actions, such as adjusting daily routines, planning outdoor activities, or implementing mitigation measures during critical periods.
+
+Ultimately, this work aims to promote greater awareness of the importance of air quality for human health and the environment. By making data and predictions more accessible and understandable, we hope to inspire and facilitate the adoption of habits and policies that contribute to cleaner air and a healthier future for all.</div>
+
+    <div class="card">
+      <h3><strong>Data and AI</strong></h3>
+      <p><strong>Dataset:</strong>updated_pollution_dataset<br>
+      <strong>AI Model:</strong>RandomForestClassifier<br>
+      <strong>Main Features:</strong></p>
+      <ul>
+        <li>Concentration of PM2.5 (µg/m³)</li>
+        <li>Concentration of Ozone (O3) (ppm)</li>
+        <li>Temperature (°C)</li>
+        <li>Relative Humidity (%)</li>
+      </ul>
+    </div>
+  </div>
+</section id=>
+
+<div class="resultados-modelo">
+  <h2>AI Model Results</h2>
+  <h3>Classification Report</h3>
+  <p>
+The Decision Tree model was evaluated, presenting the following metrics:
+  </p>
+
+  <pre>
+              precision    recall  f1-score   support
+
+        Good       1.00      1.00      1.00       409
+   Hazardous       0.92      0.88      0.90       111
+    Moderate       0.97      0.97      0.97       294
+        Poor       0.88      0.90      0.89       186
+
+    accuracy                           0.96      1000
+   macro avg       0.94      0.94      0.94      1000
+weighted avg       0.96      0.96      0.96      1000
+  </pre>
+
+  <h4>Interpretation:</h4>
+  <ul>
+    <li><strong>Precision:</strong> Of all the predictions for a class, how many were correct.</li>
+    <li><strong>Recall:</strong> Dof all the real instances of a class, how many did the model identify?</li>
+    <li><strong>F1-Score:</strong> Harmonic mean between precision and recall.</li>
+    <li><strong>support:</strong> How many samples were used.</li>
+  </ul>
+</div>
+   <section id="previsao" class="container section">
+      <h2>Make Your Prediction</h2>
+      <form id="prediction-form">
+  <div class="form-grid">
+    <div class="form-group">
+      <label for="pm25">PM2.5 (µg/m³)</label>
+      <input type="number" id="pm25" name="pm25" min="0" step="0.1" required />
+    </div>
+    <div class="form-group">
+      <label for="no2">NO₂ (ppm)</label>
+      <input type="number" id="no2" name="no2" min="0" step="0.001" required />
+    </div>
+    <div class="form-group">
+      <label for="so2">SO₂ (ppm)</label>
+      <input type="number" id="so2" name="so2" min="0" step="0.001" required />
+    </div>
+    <div class="form-group">
+      <label for="temperatura">Temperature (°C)</label>
+      <input type="number" id="temperatura" name="temperatura" min="-50" step="0.1" required />
+    </div>
+    <div class="form-group">
+      <label for="umidade">Relative Humidity (%)</label>
+      <input type="number" id="umidade" name="umidade" min="0" step="0.1" max="100" required />
+    </div>
+    <div class="form-group">
+      <label for="pm10">PM10 (µg/m³)</label>
+      <input type="number" id="pm10" name="pm10" min="0" step="0.1" required />
+    </div>
+    <div class="form-group">
+      <label for="co">CO (ppm)</label>
+      <input type="number" id="co" name="co" min="0" step="0.1" required />
+    </div>
+    <div class="form-group">
+      <label for="proximity_industrial">Proximity to Industrial Areas (km)</label>
+      <input type="number" id="proximity_industrial" name="proximity_industrial" min="0" step="0.1" required />
+    </div>
+    <div class="form-group">
+      <label for="population_density">Population Density (people/km²)</label>
+      <input type="number" id="population_density" name="population_density" required />
+    </div>
+  </div>
+  <button type="submit">Predict</button>
+</form>
+      <div id="prediction-result" class="result-box">
+        <h3>Result:</h3>
+        <p>---</p>
+      </div>
+      <p class="disclaimer">⚠️ This forecast is informative. For critical decisions, consult environmental authorities.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Team:</strong> Caio Gomes, Filipe Leonny, Guilherme Felipe, Jackson Luiz,  Harrisson Lucas, Bruno Weslei.</p>
+      <p>&copy; 2025 - Air Quality Project</p>
+    </div>
+  </footer>
+
+  <script src="APP.js"></script>
+</body>
+</html>

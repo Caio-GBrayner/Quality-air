@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+.env
+.venv/
+venv/ # Adiciona venv/ para garantir que seu ambiente virtual seja ignorado
+
+# Editor
+.vscode/ # Configurações do VS Code
+.idea/ # Configurações do PyCharm/IntelliJ
+*.sublime-project
+*.sublime-workspace
+
+# Machine Learning
+*.pkl # Seu modelo treinado
+*.joblib # Outros modelos Joblib
+*.npy # Arquivos NumPy (se você salvar arrays grandes)
+*.csv # Dados brutos ou processados (se não quiser versioná-los)
+*.ipynb_checkpoints/ # Checkpoints de Jupyter Notebook
+
+# Logs e Dados Temporários
+*.log
+tmp/
+temp/
+# Qualquer pasta ou arquivo que contenha dados sensíveis ou temporários
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+*.stackdump

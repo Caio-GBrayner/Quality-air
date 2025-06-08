@@ -1,0 +1,10 @@
+* text=auto
+
+*.pkl binary
+*.joblib binary
+*.jpeg binary
+*.jpg binary
+*.png binary
+*.gif binary
+*.pdf binary
+*.zip binary
