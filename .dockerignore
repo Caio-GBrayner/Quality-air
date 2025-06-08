@@ -1,0 +1,13 @@
+.git
+.gitignore
+.editorconfig
+.gitattributes
+.DS_Store
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.ipynb_checkpoints/
+*.log
+tmp/
+temp/
