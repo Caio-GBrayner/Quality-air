@@ -86,7 +86,7 @@ The project structure is organized as follows:
     │   ├── style.css             # CSS styles
     │   ├── APP.js                # Frontend JavaScript logic
     │   ├── img/                  # Folder for static images
-    │   │   └── (your images)
+    │   │
     │   ├── nginx.conf            # Nginx configuration
     │   └── Dockerfile            # Dockerfile for the frontend service
     ├── docker-compose.yml        # Docker services orchestration
@@ -129,14 +129,14 @@ The backend will be available internally to the frontend via `http://backend:500
 4. **Stop the application:**
 To stop and remove containers (but keep the built images), use:
 
-´´´bash
-   docker compose down 
-´´´
+```bash
+    docker compose down 
+```
 To stop and remove containers, networks, and images (for a complete cleanup or rebuilding from scratch):
 
-´´´bash
+```bash
   docker compose down --volumes --rmi all  
-´´´
+```
 
 ## Api Usage Examples
 The backend exposes a main endpoint for prediction.

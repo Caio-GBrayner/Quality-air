@@ -87,7 +87,7 @@ A estrutura do projeto é organizada da seguinte forma:
     │   ├── style.css             # Estilos CSS
     │   ├── APP.js                # Lógica JavaScript do frontend
     │   ├── img/                  # Pasta para imagens estáticas
-    │   │   └── (suas imagens)
+    │   │
     │   ├── nginx.conf            # Configuração do Nginx
     │   └── Dockerfile            # Dockerfile para o serviço frontend
     ├── docker-compose.yml        # Orquestração dos serviços Docker
@@ -131,14 +131,14 @@ O backend estará disponível internamente para o frontend via `http://backend:5
 4. **Parar a aplicação:**
 Para parar e remover os contêineres (mas manter as imagens construídas), use:
 
-´´´bash
+```bash
    docker compose down 
-´´´
+```
 Para parar e remover contêineres, redes e imagens (para uma limpeza completa ou reconstrução do zero):
 
-´´´bash
+```bash
   docker compose down --volumes --rmi all  
-´´´
+```
 
 ## Exemplos de Uso da API
 O backend expõe um endpoint principal para previsão.
