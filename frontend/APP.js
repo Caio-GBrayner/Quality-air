@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let [key, value] of formData.entries()) {
             const numValue = parseFloat(value);
             if (isNaN(numValue)) {
-                resultDiv.textContent = `Erro: Por favor, insira um valor numérico válido para ${key}.`;
+                resultDiv.textContent = `Error: Please enter a valid numeric value for ${key}.`;
                 return;
             }
             data[key] = numValue;
         }
 
-        resultDiv.textContent = 'Prevendo...';
+        resultDiv.textContent = 'Predicting...';
 
         fetch('http://127.0.0.1:5000/predict', {
             method: 'POST',
@@ -34,11 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
             return response.json();
         })
         .then(predictionData => {
-            resultDiv.textContent = `Qualidade do Ar Prevista: ${predictionData.prediction}`;
+            resultDiv.textContent = `Predicted Air Quality: ${predictionData.prediction}`;
         })
         .catch(error => {
-            console.error('Erro:', error);
-            resultDiv.textContent = `Erro ao obter previsão: ${error.message}. Verifique o console para mais detalhes.`;
+            console.error('Error:', error);
+            resultDiv.textContent = `Error fetching prediction: ${error.message}. Check console for details.`;
         });
     });
 });
