@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(response => {
             if (!response.ok) {
-                throw new Error(`Erro na requisição: ${response.statusText}`);
+                throw new Error(`Error in request: ${response.statusText}`);
             }
             return response.json();
         })
