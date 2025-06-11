@@ -12,3 +12,7 @@ __pycache__/
 tmp/
 temp/
 *.ipynb
+EDA/*
+docs/*
+README.md
+LICENSE"
