@@ -18,7 +18,7 @@
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
-  - [Connect with me on LinkedIn](#connect-with-me-on-linkedin)
+  - [Connect with us on LinkedIn](#connect-with-us-on-linkedin)
   - [Fork and clone the repository](#fork-and-clone-the-repository)
   - [Project Structure](#project-structure)
 - [Build and Run with Docker Compose](#build-and-run-with-docker-compose)
@@ -62,6 +62,9 @@ We welcome contributions! If you'd like to help improve this project, please fol
 ### Connect with us on LinkedIn
 
 1. Connect with Caio Brayner [LinkedIn](https://www.linkedin.com/in/caiogomesbrayner).
+2. Connect with Jackson Luiz [LinkedIn](https://www.linkedin.com/in/jackson-luiz-550992287)
+3. Connect with Filipe Leonny [LinkedIn](https://www.linkedin.com/in/filipeleonny)
+4. Connect with Guilherme Felipe [LinkedIn](https://www.linkedin.com/in/guilherme-felipe-16a134302)
 
 ### Fork and clone the repository
 

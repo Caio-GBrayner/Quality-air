@@ -62,6 +62,9 @@ Estamos abertos a contribuições! Se você quiser ajudar a melhorar este projet
 ### Conecte-se conosco no LinkedIn
 
 1. Conecte-se com Caio Brayner [LinkedIn](https://www.linkedin.com/in/caiogomesbrayner).
+2. Conecte-se com Jackson Luiz [LinkedIn](https://www.linkedin.com/in/jackson-luiz-550992287)
+3. Conecte-se com Filipe Leonny [LinkedIn](https://www.linkedin.com/in/filipeleonny)
+4. Conecte-se com Guilherme Felipe [LinkedIn](https://www.linkedin.com/in/guilherme-felipe-16a134302)
 
 ### Faça o Fork e Clone o Repositório
 
