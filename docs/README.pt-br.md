@@ -25,6 +25,7 @@
   - [Pré-requisitos](#pre-requisitos)
   - [Construindo e Iniciando a Aplicação](#construindo-e-iniciando-a-aplicação)
 - [Exemplos de Uso da API](#exemplos-de-uso-da-api)
+- [Veja o notebook renderizado](#veja-o-notebook-renderizado)
 - [Licença](#licença)
 
 ## Sobre
@@ -167,6 +168,9 @@ O backend expõe um endpoint principal para previsão.
      -d '{"features": []}' \
      http://localhost/predict  
 ```
+## Veja o notebook renderizado
+1. Url: `https://nbviewer.org./github/Caio-GBrayner/Quality-air/blob/main/EDA/Air-Quality.ipynb`
+
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
