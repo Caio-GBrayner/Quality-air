@@ -169,7 +169,7 @@ O backend expõe um endpoint principal para previsão.
      http://localhost/predict  
 ```
 ## Veja o notebook renderizado
-1. Url: `https://nbviewer.org./github/Caio-GBrayner/Quality-air/blob/main/EDA/Air-Quality.ipynb`
+1. Url: [Notebook](https://nbviewer.org./github/Caio-GBrayner/Quality-air/blob/main/EDA/Air-Quality.ipynb)
 
 ## Licença
 
